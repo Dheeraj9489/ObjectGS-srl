@@ -83,6 +83,16 @@ cd ObjectGS
 conda env create --file environment.yml
 ```
 
+**❗️❗️❗️Attention: You should install my [customized gsplat](https://github.com/RuijieZhu94/gsplat-object), instead of the original gsplat.**
+
+If compilation fails, you will likely need to install `libglm-dev`:
+
+```bash
+sudo apt-get install libglm-dev
+# then reinstall gsplat-object
+pip install git+https://github.com/RuijieZhu94/gsplat-object.git
+```
+
 ### 🌟 Training
 
 #### Data Preprocessing
